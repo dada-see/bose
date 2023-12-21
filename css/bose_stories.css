@@ -1,0 +1,116 @@
+@charset "utf-8";
+#wrap{
+    min-width: 1480px;
+}
+/* 메인1 */
+#main1{
+    position: relative;
+    margin-bottom: 55px;
+}
+.m1_bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/bose_stories/bose_stories_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.m1_bg_layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.m1_content{
+    position: absolute;
+    bottom: 80px;
+    right: 50%;
+    margin-right: -189px;
+    z-index: 100;
+}
+.m1_cont_01{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-align: center;
+}
+/* 메인2 */
+.m2_in{
+    width: 1440px;
+    margin: 0 auto 100px;
+}
+.m2_in ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.m2_in li{
+    width: 464px;
+}
+.m2_in a:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.stories_photo{
+    width: 464px;
+    height: 464px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.stories_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 메인3 */
+.main3{
+    border-top: 2px solid #8b8b8b;
+}
+.m3_in{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+}
+.m3_logo{
+    width: 718px;
+    text-align: center;
+}
+.m3_logo a{
+    display: inline-block;
+    width: 320px;
+    height: 39px;
+    padding: 20px 0;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px;
+}
+.m3_logo a:hover{
+    opacity: 0.7;
+}
+.m3_menu{
+    border-left: 2px solid #8b8b8b;
+}
+.m3_menu li{
+    width: 718px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.m3_menu li:first-child{
+    margin-top: 25px;
+}
+.m3_menu a{
+    padding: 5px;
+    color: #222;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.m3_menu a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
