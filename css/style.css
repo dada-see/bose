@@ -1,0 +1,463 @@
+@charset "utf-8";
+#wrap{
+    min-width: 1480px;
+    position: relative;
+}
+#skipNavi{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 120px;
+    z-index: 1000;
+}
+#skipNavi a{
+    position: absolute;
+    top: -39px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 39px;
+    background-color: #121212;
+    border-radius: 10px;
+    color: #eee;
+    text-align: center;
+    line-height: 39px;
+}
+#skipNavi a:focus{
+    top: 0;
+    border: 1px solid #fff;
+}
+/* 헤더 */
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    background: none;
+}
+.gnb a{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+}
+/* 메인1 */
+.main1{
+    overflow: hidden;
+}
+.m1_in .video_wrap{
+    width: 100%;
+    max-width: 1960px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.m1_in video{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    object-fit: cover
+}
+/* 메인2-인기상품 */
+.main2{
+    padding: 140px 0;
+}
+.m2_in{
+    width: 1440px;
+    margin: 0 auto;
+}
+.main_title{
+    margin-bottom: 85px;
+    text-align: center;
+    color: #111;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1em;
+}
+.m2_icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.m2_icon p{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+.m2_earbuds{
+    background-image: url(../images/icon_earbuds.png);
+    background-size: contain;
+}
+.m2_earbuds:hover, .m2_earbuds.active{
+    background-image: url(../images/icon_earbuds_bl.png);
+    background-size: contain;
+}
+.m2_headphones{
+    background-image: url(../images/icon_headphone.png);
+    background-size: contain;
+}
+.m2_headphones:hover, .m2_headphones.active{
+    background-image: url(../images/icon_headphone_bl.png);
+    background-size: contain;
+    background-position: center bottom 1.5px;
+}
+.m2_soundbar{
+    background-image: url(../images/icon_soundbar.png);
+    background-size: contain;
+}
+.m2_soundbar:hover, .m2_soundbar.active{
+    background-image: url(../images/icon_soundbar_bl.png);
+    background-size: contain;
+    background-position: center bottom -1px;
+}
+.m2_speaker{
+    background-image: url(../images/icon_speaker.png);
+    background-size: contain;
+}
+.m2_speaker:hover, .m2_speaker.active{
+    background-image: url(../images/icon_speaker_bl.png);
+    background-size: contain;
+}
+.m2_list ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0 0;
+}
+.m2_list ul.slick-dots li{
+    width: 180px;
+    height: 3px;
+    text-indent: -99999px;
+    background-color: #8b8b8b;
+}
+.m2_list ul.slick-dots .slick-active{
+    background-color: #111;
+}
+.product_photo{
+    position: relative;
+    width: 342px;
+    height: 342px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.product_photo img{
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+.m2_list a:hover img{
+    transform: scale(1.1);
+}
+.sticker{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sticker span{
+    padding: 3px 9px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.stick_new{
+    background-color: #000;
+}
+.stick_best{
+    background-color: #6bafd6;
+}
+.stick_soldout{
+    background-color: #666;
+    font-size: 12px;
+}
+.product_name{
+    margin-bottom: 5px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product_color{
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1em;
+}
+.product_price{
+    color: #111;
+    font-size: 15px;
+    font-weight: 500;
+}
+.product_price span{
+    font-size: 13px;
+}
+.response_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review_like{
+    display: flex;
+    align-items: center;
+}
+.review a{
+    display: inline-block;
+    padding-left: 35px;
+    margin-right: 10px;
+    line-height: 30px;
+    background-image: url(../images/icon_review.png);
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    color: #222;
+    font-size: 15px;
+}
+.like a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    background-image: url(../images/icon_like.png);
+    background-size: 25px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.cart a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon_shopping_bag_bk_01.png);
+    background-size: auto 30px;
+    background-repeat: no-repeat;
+    background-position: right 9px center;
+}
+.cart:hover{
+    background-color: rgba(107, 175, 214, 0.5 );
+}
+.m2_list .slick-arrow{
+    position: absolute;
+    top: 135px;
+    width: 38px;
+    height: 73px;
+    background-image: url(../images/icon_all.png);
+    cursor: pointer;
+    text-indent: -999999px;
+} 
+.m2_list .slick-prev{
+    position: absolute;
+    top: 135px;
+    width: 38px;
+    height: 73px;
+    background-image: url(../images/icon_all.png);
+    left: 50%;
+    margin-left: -783px;
+    background-position: -268px 0;
+} 
+.m2_list .slick-next{
+    right: 50%;
+    margin-right: -783px;
+    background-position: -338px 0;
+}
+/* 메인3- 브랜드이미지 */
+.main3{
+    margin-bottom: 100px;
+    background-color: #000;
+}
+.m3_in{
+    width: 1440px;
+    padding: 80px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.m3_in > img{
+    margin-bottom: 80px;
+}
+.m3_01{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.m3_01 img{
+    margin-left: -1000px;
+    opacity: 0;
+    transition: 1s;
+}
+.m3_01 .m3_content{
+    margin-right: -500px;
+    opacity: 0;
+    transition: 1s;
+}
+.m3_01.on img{
+    margin-left: 0;
+    opacity: 1;
+}
+.m3_01.on .m3_content{
+    margin-right: 0;
+    opacity: 1;
+}
+.m3_02 .m3_content{
+    margin-left: -500px;
+    opacity: 0;
+    transition: 1s;
+}
+.m3_02 img{
+    margin-right: -1000px;
+    opacity: 0;
+    transition: 1s;
+}
+.m3_02.on .m3_content{
+    margin-left: 0;
+    opacity: 1;
+}
+.m3_02.on img{
+    margin-right: 0;
+    opacity: 1;
+}
+.m3_content{
+    margin-top: 100px;
+}
+.m3_title{
+    margin-bottom: 150px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.m3_hash{
+    color: rgba(255, 255, 255, .7);
+    font-size: 22px;
+    line-height: 1.3em;
+}
+.m3_01 p{
+    text-align: end;
+}
+.m3_02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 메인4 - 신제품 */
+.m4_in{
+    width: 1440px;
+    margin: 0 auto 140px;
+}
+.m4_speaker_prod{
+    position: relative;
+}
+.m4_speaker_list{
+    display: flex;
+    justify-content: space-between;
+}
+.m4_speaker_list li{
+    width: 342px;
+}
+.m4_speaker_list a:hover img{
+    transform: scale(1.1);
+}
+.m4_speaker_prod .slick-arrow{
+    position: absolute;
+    top: 135px;
+    width: 27px;
+    height: 51px;
+    background-image: url(../images/icon_all.png);
+    cursor: pointer;
+    text-indent: -99999px;
+    z-index: 10;
+} 
+.slick-prev{
+    left: 50%;
+    margin-left: -710px;
+    background-position: -397px 0;
+} 
+.slick-next{
+    right: 50%;
+    margin-right: -690px;
+    background-position: -436px 0;
+}
+/* 메인5 - 배너 */
+.m5_in{
+    position: relative;
+    width: 1440px;
+    margin: 0 auto 50px;
+}
+.m5_in img{
+    width: 1440px;
+}
+.m5_btn{
+    position: absolute;
+    top: 270px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.m5_btn a{
+    display: inline-block;
+    width: 60px;
+    padding: 0 20px;
+    border: 1px solid #affebe;
+    border-radius: 5px;
+    color: #affebe;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    transition: .4s;
+}
+.m5_btn a:hover{
+    padding: 10px 30px;
+    transform: translateY(-10px);
+
+}
+/* 메인6 - 하단 메뉴 */
+.main6{
+    border-top: 2px solid #8b8b8b;
+}
+.m6_in{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+}
+.m6_logo{
+    width: 718px;
+    text-align: center;
+}
+.m6_logo a{
+    display: inline-block;
+    width: 320px;
+    height: 39px;
+    padding: 20px 0;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px;
+}
+.m6_logo a:hover{
+    opacity: 0.7;
+}
+.m6_menu{
+    border-left: 2px solid #8b8b8b;
+}
+.m6_menu li{
+    width: 718px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.m6_menu li:first-child{
+    margin-top: 25px;
+}
+.m6_menu a{
+    padding: 5px;
+    color: #222;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.m6_menu a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
